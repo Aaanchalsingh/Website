@@ -1,7 +1,9 @@
 # AANCHAL_SINGH // Kinetic Portfolio
 
 A high-fidelity, single-page developer portfolio built with Next.js 15, React 19, and Framer Motion. Features a distinctive terminal-inspired aesthetic with spring-physics animations, dark/light theming, and a responsive layout.
+
 [View it on Netlify](https://aanchalsinghresume.netlify.app/)
+
 ![Next.js](https://img.shields.io/badge/Next.js-15.3-black?logo=next.js)
 ![React](https://img.shields.io/badge/React-19-blue?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue?logo=typescript)
