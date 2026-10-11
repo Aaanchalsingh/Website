@@ -1,5 +1,4 @@
 "use client";
-
 import { Terminal } from "lucide-react";
 import { motion } from "motion/react";
 import ThemeToggle from "./ThemeToggle";
@@ -20,19 +19,34 @@ export default function Navbar() {
 
       {/* Desktop nav */}
       <nav className="hidden md:flex gap-8 items-center">
-        {["SYSTEM_ROOT", "EXPERIENCE", "PROJECTS_V2", "TERMINAL"].map((item) => (
+        {[
+          { label: "HOME",       href: "#system_root" },
+          { label: "EXPERIENCE", href: "#experience"  },
+          { label: "PROJECTS",   href: "#projects"    },
+          { label: "CONTACT",    href: "#terminal"    },
+        ].map((item) => (
           <a
-            key={item}
-            href={`#${item.toLowerCase().replace("_v2", "").replace("_root", "")}`}
+            key={item.label}
+            href={item.href}
             className="font-label tracking-[0.05em] uppercase text-xs text-nav-text hover:text-secondary transition-colors duration-300 font-medium"
           >
-            {item}
+            {item.label}
           </a>
         ))}
       </nav>
 
       <div className="flex items-center gap-3">
         <ThemeToggle />
+
+        {/* Social links — desktop only */}
+        <a href="https://github.com/Aaanchalsingh" target="_blank" rel="noopener noreferrer"
+           className="hidden md:inline-flex font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors">
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/aanchalsingh" target="_blank" rel="noopener noreferrer"
+           className="hidden md:inline-flex font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors">
+          LinkedIn
+        </a>
 
         <motion.a
           href="/resume.pdf"
@@ -53,7 +67,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.95 }}
           className="bg-secondary text-on-secondary px-4 py-1.5 rounded-lg font-label text-xs font-bold tracking-widest transition-all"
         >
-          EXECUTE_CONTACT
+          CONTACT
         </motion.a>
       </div>
     </motion.header>
