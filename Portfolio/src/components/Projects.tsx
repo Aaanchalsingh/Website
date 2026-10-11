@@ -3,29 +3,42 @@ import { motion } from 'motion/react';
 
 const projects = [
   {
-    title: 'URL Shortener',
-    type: 'Backend System',
-    description: 'Scalable URL redirection system using Spring Boot and Redis for high-speed link resolution. Implements custom hashing algorithms to ensure collision-free performance.',
-    tags: ['JAVA', 'REDIS', 'MONGODB'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCin5M-OpxD52FMkSnLgx5i6VBjKwK-rhiM-F1yJZWKPg05BsuOlKs2JeGRo5nh45NQNuP8YmY_e169aUkFo-1w7p0s6SUGxEbJqCPxKpLTHeh2kYtCe183uUwCFSN9D2wCx2o2GUfrpwejR2bKBUM8aEHXcMgKnEjo8JWNqzrZt5EGMKC3CLKPdbfZqXcExKZEd3jnj0IWE0cpCNPbXVcFfT0LYYh6xRiRcDLBYPT_kRJ19Bu-7NYPpYnf0VfO5aBWhtWm2UxiSa0',
+    title: 'CS Visualizer',
+    type: 'AI TOOL',
+    description: 'AI-powered web app to learn software engineering concepts through animated step-by-step diagrams. Type any concept and Groq AI generates an explanation with Mermaid diagrams instantly.',
+    tags: ['REACT', 'GROQ AI', 'MERMAID.JS'],
+    image: 'https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?w=800&auto=format&fit=crop&q=80',
     colSpan: 'md:col-span-1',
+    link: 'https://cs-visualizer-aanchal.netlify.app',
   },
   {
-    title: 'Task Queue Engine',
-    type: 'Infrastructure',
-    description: 'Distributed task processing engine designed for asynchronous background job management. Built for reliability and observability in large-scale system architectures.',
-    tags: ['SPRING BOOT', 'POSTGRES', 'DOCKER'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCuFjyKlFRpGNTvuXODckegXX6n71x1OgQ-hdScFI1n_l8JjVr2eKMkGvfAhOsaJIpMJM6tHXNEZ9Ka4X9EnBLS_QL3ks-37V-mFA5vH_BdvmNb6yDSBLys3e6Sp2gD1eXi-yxyE9K9X4Ov9CXqfRm_QfDIZGcaDTdnhoWJ59vM2Tg2zIXeLi3GjZqcC1ZTzoiaxFqjXk3kq3xi4DmO2rMVyhTP61nus0AXMkKVJmhmuAYOpn4PVhgjWHaflVi3EeYgOS044gSntsA',
+    title: 'Codex RAG',
+    type: 'AI / RAG',
+    description: 'Codebase intelligence tool powered by Retrieval-Augmented Generation. Chat with any codebase to understand architecture, trace execution paths, and explore dependencies.',
+    tags: ['PYTHON', 'LANGCHAIN', 'RAG'],
+    image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&auto=format&fit=crop&q=80',
     colSpan: 'md:col-span-1',
+    link: 'https://github.com/Aaanchalsingh/codex-rag',
   },
   {
-    title: 'Style Sprint',
-    type: 'E-COMMERCE ROOT',
-    description: 'A high-performance e-commerce platform focusing on rapid browsing and checkout. Features a robust inventory management system and integrated payment gateways.',
-    tags: ['REACT', 'SPRING BOOT', 'STRIPE API'],
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBC-mOwk0LQgJyz-EF_ZBLQsLmA4zuzRoPbrI-72XUpwAJBmjavLppbIrXHyvGvQKz4a0cVyeI6yEjipFQoAaOZrAxITm04wvGn4iFihJ-PbWYRcOcotnQduDADy6x325sCGtOPH4bG_kQN14hY2sWeGORXYjdshC7OFkXzJFQkXP931iaxuN2MX1ypIzzVm3aTp1Zd0K_51IJdBilmq4RIAhNun22EA8TPnSxWId6H6Y7tszRMOw__ntlCHd_Szw8SEG7kdY2DNzg',
+    title: 'CalAI',
+    type: 'HEALTH TECH',
+    description: 'Smart Indian Calorie Tracker powered by AI. Tracks nutrition for Indian meals and helps users maintain healthy eating habits with intelligent dietary suggestions.',
+    tags: ['REACT', 'AI', 'HEALTH'],
+    image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&auto=format&fit=crop&q=80',
     colSpan: 'md:col-span-2',
     isLarge: true,
+    link: 'https://calorie-tracker-support-app.netlify.app',
+  },
+  {
+    title: 'FintechIntel',
+    type: 'AI SURVEILLANCE',
+    description: 'Autonomous competitive intelligence platform that monitors fintech competitors like Razorpay, Groww, and Zerodha 24/7 — tracking website changes, funding rounds, hiring surges and product launches.',
+    tags: ['AI', 'AUTOMATION', 'FINTECH'],
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop&q=80',
+    colSpan: 'md:col-span-2',
+    isLarge: true,
+    link: 'https://autonomous-competitive-intelligence.netlify.app/landing',
   },
 ];
 
@@ -81,9 +94,14 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
-                    <button className="w-fit flex items-center gap-3 px-8 py-4 bg-primary text-on-primary font-bold tracking-widest uppercase text-xs rounded-lg hover:shadow-[0_0_20px_rgba(177,161,255,0.3)] transition-all active:scale-95">
-                      View Architecture <Terminal className="w-4 h-4" />
-                    </button>
+                    <a
+                        href={project.link || '#'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-fit flex items-center gap-3 px-8 py-4 bg-primary text-on-primary font-bold tracking-widest uppercase text-xs rounded-lg hover:shadow-[0_0_20px_rgba(177,161,255,0.3)] transition-all active:scale-95"
+                      >
+                        View Project <Terminal className="w-4 h-4" />
+                      </a>
                   </div>
                 </div>
               ) : (
@@ -100,9 +118,14 @@ export default function Projects() {
                   <div className="p-8 space-y-6">
                     <div className="flex justify-between items-start">
                       <h3 className="font-headline text-3xl font-bold tracking-tighter">{project.title}</h3>
-                      <button className="h-10 w-10 rounded-full flex items-center justify-center bg-secondary/10 text-secondary hover:bg-secondary hover:text-on-secondary transition-colors">
+                      <a
+                        href={project.link || '#'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-10 w-10 rounded-full flex items-center justify-center bg-secondary/10 text-secondary hover:bg-secondary hover:text-on-secondary transition-colors"
+                      >
                         <ArrowUpRight className="w-5 h-5" />
-                      </button>
+                      </a>
                     </div>
                     <p className="text-on-surface-variant leading-relaxed line-clamp-3">
                       {project.description}
