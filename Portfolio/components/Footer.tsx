@@ -10,11 +10,11 @@ export default function Footer() {
              className="font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/aanchalsingh" target="_blank" rel="noopener noreferrer"
+          <a href="https://linkedin.com/in/aanchallsingh" target="_blank" rel="noopener noreferrer"
              className="font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors">
             LinkedIn
           </a>
-          <a href="https://leetcode.com/aanchalsingh" target="_blank" rel="noopener noreferrer"
+          <a href="https://leetcode.com/u/Aanchall" target="_blank" rel="noopener noreferrer"
              className="font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors">
             LeetCode
           </a>

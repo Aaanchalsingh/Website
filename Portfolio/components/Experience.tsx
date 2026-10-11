@@ -4,14 +4,24 @@ import { motion } from "motion/react";
 
 const experiences = [
   {
-    role: "Backend Developer",
+    role: "Software Engineer (Backend)",
     company: "DIGIOTECH SOLUTIONS",
-    period: "Aug 2023 — Present",
+    period: "May 2025 — Present",
     highlights: [
       "Built and maintained scalable backend microservices for fintech applications using Java 17 and Spring Boot 3, serving real-time transaction and KYC workflows.",
       "Reduced p95 API latency by 40% by identifying N+1 query patterns, adding composite indexes on high-traffic tables, and introducing response caching with Redis.",
       "Containerized services using Docker and configured CI/CD pipelines (GitHub Actions) to automate build, test, and deployment — cutting release time from hours to under 15 minutes.",
-      "Collaborated with a 6-member engineering team on system design reviews, API contract definitions, and code reviews for production microservices.",
+      "Collaborated with the engineering team on system design reviews, API contract definitions, and code reviews for production microservices.",
+    ],
+  },
+  {
+    role: "Software Engineer Intern (Backend)",
+    company: "DIGIOTECH SOLUTIONS",
+    period: "Aug 2024 — May 2025",
+    highlights: [
+      "Developed REST APIs for internal fintech workflows using Spring Boot, contributing to services used in production during the internship period.",
+      "Worked on database query optimisation and learned containerisation practices using Docker within a microservices architecture.",
+      "Converted to full-time on the basis of performance after completing the internship.",
     ],
   },
 ];

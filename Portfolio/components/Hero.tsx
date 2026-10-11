@@ -108,11 +108,11 @@ export default function Hero() {
                className="font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors border border-outline-variant/30 px-3 py-1.5 rounded">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/aanchalsingh" target="_blank" rel="noopener noreferrer"
+            <a href="https://linkedin.com/in/aanchallsingh" target="_blank" rel="noopener noreferrer"
                className="font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors border border-outline-variant/30 px-3 py-1.5 rounded">
               LinkedIn
             </a>
-            <a href="https://leetcode.com/aanchalsingh" target="_blank" rel="noopener noreferrer"
+            <a href="https://leetcode.com/u/Aanchall" target="_blank" rel="noopener noreferrer"
                className="font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors border border-outline-variant/30 px-3 py-1.5 rounded">
               LeetCode
             </a>

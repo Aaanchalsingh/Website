@@ -43,7 +43,7 @@ export default function Navbar() {
            className="hidden md:inline-flex font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors">
           GitHub
         </a>
-        <a href="https://linkedin.com/in/aanchalsingh" target="_blank" rel="noopener noreferrer"
+        <a href="https://linkedin.com/in/aanchallsingh" target="_blank" rel="noopener noreferrer"
            className="hidden md:inline-flex font-label text-[10px] tracking-widest text-on-surface-variant hover:text-secondary uppercase transition-colors">
           LinkedIn
         </a>
