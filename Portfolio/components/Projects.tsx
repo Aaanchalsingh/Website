@@ -5,34 +5,48 @@ import { motion } from "motion/react";
 
 const projects = [
   {
-    title: "URL Shortener",
-    type: "Backend System",
+    title: "CS Visualizer",
+    type: "AI TOOL",
     description:
-      "Scalable URL redirection system using Spring Boot and Redis for high-speed link resolution. Implements custom hashing algorithms to ensure collision-free performance.",
-    tags: ["JAVA", "REDIS", "MONGODB"],
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+      "AI-powered web app to learn software engineering concepts through animated step-by-step diagrams. Type any concept and Groq AI generates an explanation with Mermaid diagrams instantly.",
+    tags: ["REACT", "GROQ AI", "MERMAID.JS"],
+    image: "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?w=800&q=80",
     colSpan: "md:col-span-1",
     isLarge: false,
+    link: "https://cs-visualizer-aanchal.netlify.app",
   },
   {
-    title: "Task Queue Engine",
-    type: "Infrastructure",
+    title: "Codex RAG",
+    type: "AI / RAG",
     description:
-      "Distributed task processing engine designed for asynchronous background job management. Built for reliability and observability in large-scale system architectures.",
-    tags: ["SPRING BOOT", "POSTGRES", "DOCKER"],
-    image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800&q=80",
+      "Codebase intelligence tool powered by Retrieval-Augmented Generation. Chat with any codebase to understand architecture, trace execution paths, and explore dependencies.",
+    tags: ["PYTHON", "LANGCHAIN", "RAG"],
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80",
     colSpan: "md:col-span-1",
     isLarge: false,
+    link: "https://github.com/Aaanchalsingh/codex-rag",
   },
   {
-    title: "Style Sprint",
-    type: "E-COMMERCE ROOT",
+    title: "CalAI",
+    type: "HEALTH TECH",
     description:
-      "A high-performance e-commerce platform focusing on rapid browsing and checkout. Features a robust inventory management system and integrated payment gateways.",
-    tags: ["REACT", "SPRING BOOT", "STRIPE API"],
-    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80",
+      "Smart Indian Calorie Tracker powered by AI. Tracks nutrition for Indian meals and helps users maintain healthy eating habits with intelligent dietary suggestions.",
+    tags: ["REACT", "AI", "HEALTH"],
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
     colSpan: "md:col-span-2",
     isLarge: true,
+    link: "https://calorie-tracker-support-app.netlify.app",
+  },
+  {
+    title: "FintechIntel",
+    type: "AI SURVEILLANCE",
+    description:
+      "Autonomous competitive intelligence platform that monitors fintech competitors like Razorpay, Groww, and Zerodha 24/7 — tracking website changes, funding rounds, hiring surges and product launches.",
+    tags: ["AI", "AUTOMATION", "FINTECH"],
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+    colSpan: "md:col-span-2",
+    isLarge: true,
+    link: "https://autonomous-competitive-intelligence.netlify.app/landing",
   },
 ];
 
@@ -102,9 +116,14 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
-                    <button className="w-fit flex items-center gap-3 px-6 md:px-8 py-3 md:py-4 bg-primary text-on-primary font-bold tracking-widest uppercase text-xs rounded-lg hover:shadow-[0_0_20px_rgba(177,161,255,0.3)] transition-all active:scale-95">
-                      View Architecture <Terminal className="w-4 h-4" />
-                    </button>
+                    <a
+                      href={(project as any).link || '#'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-fit flex items-center gap-3 px-6 md:px-8 py-3 md:py-4 bg-primary text-on-primary font-bold tracking-widest uppercase text-xs rounded-lg hover:shadow-[0_0_20px_rgba(177,161,255,0.3)] transition-all active:scale-95"
+                    >
+                      View Project <Terminal className="w-4 h-4" />
+                    </a>
                   </div>
                 </div>
               ) : (
